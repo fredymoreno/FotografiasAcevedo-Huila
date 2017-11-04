@@ -1,12 +1,15 @@
 body{
   background-color: #02010a;
 }
+
 #contenedor{
   width: 950px;
   margin: 0 auto;
   font-family: 'Dancing Script', cursive;
 }
+
 /*encabezdo*/
+
 header{
   background-color: #5b7989;
   height: 100%;
@@ -18,14 +21,76 @@ header{
   align-items: center;
   text-shadow: 2px #02010a;
 }
+
 header h1{
   color: #ffffff;
   text-shadow: 2px 2px #02010a;
 }
+header a[href^="html"],[href^="index"],[href^="../"]{
+  color: #ffffff;
+}
+
+#visitadaindex{
+  text-decoration: none;
+  background-color: rgba(244, 43, 43, 0.3);
+  border-radius: 5px;
+}
+#visitadapaisajes{
+  text-decoration: none;
+  background-color: rgba(244, 43, 43, 0.3);
+  border-radius: 5px;
+}
+#visitadaretratos{
+  text-decoration: none;
+  background-color: rgba(244, 43, 43, 0.3);
+  border-radius: 3px;
+}
+
+/*imagen central*/
+
+#imagencentral{
+  background-color: #82c3a6;
+}
+#imagencentral img{
+  width: 70%;
+  margin-left: 13%;
+  padding: 15px;
+}
+
+/*imagen secundaria*/
+
+#imagensecundaria{
+  background-color: #d5c75f;
+  border: 1px;
+  display: flex;
+}
+.imagendepaisajes img{
+  height: 250px;
+  width: 70%;
+  margin-left: 10%;
+  padding: 15px;
+
+}
+.imagenderetrato img{
+  height: 250px;
+  width: 100%;
+  margin-left: 30%;
+  padding: 15px;
+}
+.enlace1{
+  text-align: center;
+}
+.enlace2{
+  text-align: right;
+}
+
+/*version movil*/
+
 @media (max-width:420px) {
   #contenedor{
   width: 100%;
   }
+  /*encabezado*/
   header{
   width: 100%;
   min-height: 150px;
@@ -40,4 +105,9 @@ header h1{
   width: 100%;
   text-align: center;
   }
+  /*imagencentral*/
+  #imagencentral img{
+    width: 100%;
+    margin-left: 0%;
+    padding: 1px;
 }
