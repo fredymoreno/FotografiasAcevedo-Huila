@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-widht,user-scalable=no, initial-scale=1.0">
+    <meta name="viewport" content="width=device-widht,user-scalable=no,initial-scale=1.0">
     <title>Fotografias Acevedo Huila</title>
     <link rel="stylesheet" href="css/estilos.css">
     <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
@@ -11,12 +11,16 @@
     <div id="contenedor">
       <!--Encabezado-->
       <header>
-        <h1>Comenzando con la fotografía</h1>
-        <nav>
-          <a id="visitadaindex" class="enlaces" href="index.html" title="Inicio">Inicio</a>
-          <a class="enlaces" href="html/paisajes.html" title="paisajes">Paisajes</a>
-          <a class="enlaces" href="html/retratos.html" title="retratos">Retratos</a>
-        </nav>
+        <div id="tituloencabezado">
+          <h1>Comenzando con la fotografía</h1>
+        </div>
+        <div id="menuencabezado">
+          <nav>
+            <a id="visitadaindex" class="enlaces" href="index.html" title="Inicio">Inicio</a>
+            <a class="enlaces" href="html/paisajes.html" title="paisajes">Paisajes</a>
+            <a class="enlaces" href="html/retratos.html" title="retratos">Retratos</a>
+          </nav>
+        </div>
       </header>
       <!--imagen central-->
       <section>
@@ -24,30 +28,44 @@
           <img src="img/IglesiaAcevedo-Huila.jpg" alt="iglesia acevedo huila" title="Iglesia Acevedo-Huila">
         </article>
         <!--imagen secuntaria-->
-        <article id="imagensecundaria">
-          <div class="imagendepaisajes" text-align: right;>
-            <div class="imagenpaisajes">
-              <img  src="img/Acevedo,municipio.JPG" alt="municipio acevedo" title="Acevedo-Huila">.
-            </div>
-            <div class="enlace1">
-              <a class="enlaces" href="html/paisajes.html" title="paisajes">Paisajes</a>
-            </div>
+        <article id="secundaria">
+          <div class="imagensecundaria">
+            <a href="html/paisajes.html"><img class="imagenpaisaje" src="img/Acevedo,municipio.JPG" alt="municipio acevedo" title="Acevedo-Huila"></a>.
           </div>
-          <div class="imagenderetrato">
-            <div class="imagenretrato">
-              <img src="img/joseacevedoygomez.jpg" alt="municipio acevedo" title="Jose Acevedo y Gomez">
-            </div>
-            <div class="enlace2">
-              <a class="enlaces" href="html/retratos.html" title="retratos">Retratos</a>
-            </div>
+          <div class="imagensecundaria">
+            <a href="html/retratos.html"><img class="imagenretrato" src="img/joseacevedoygomez.jpg" alt="municipio acevedo" title="Jose Acevedo y Gomez"></a>
           </div>
         </article>
       </section>
       <!--pie de pagina-->
       <footer>
-        <div class="contacto">
+        <div class="columna">
           <h2>Contacto</h2>
-
+            <p>
+              acevedohuila@hotmail.com <br>
+              carrera 12 # 8-78 <br>
+              2883065
+            </p>
+        </div>
+        <div class="columna">
+          <h2>Terminos</h2>
+            <p>
+              terminos y condiciones
+            </p>
+        </div>
+        <div class="columna">
+          <h2>Redes Socilaes</h2>
+            <p>
+              <img class="icono-social" src="img/facebook.png" alt="facebook">acevedohuila <br>
+              <img class="icono-social" src="img/istagran.png" alt="istagran">@acevedohuila<br>
+              <img class="icono-social" src="img/twitter.png" alt="twitter">acevedohuila
+            </p>
+        </div>
+        <div class="columna">
+          <h2>Derechos</h2>
+            <p>
+              ©fredy moreno 2017
+            </p>
         </div>
       </footer>
     </div>
